@@ -20,9 +20,6 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-
-    - name: Build
-      run: npm run build  # Adjust this to match your build script if needed
-
+      
     - name: Start server
       run: npm start
