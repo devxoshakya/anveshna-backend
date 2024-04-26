@@ -1,0 +1,32 @@
+v: 0
+app_name: "amvstrmAPI"
+icon: "./icon.png"
+micros:
+  - name: amvstrmAPI
+    src: .
+    engine: nodejs16
+    run: node index.js
+    dev: npm run dev
+    primary: true
+    public: true
+    presets:
+      env:
+        - name: RATE_LIMIT
+          description: Rate limit your API request.
+          default: '300'
+        - name: ALLOWLIST
+          description: Set URL list to bypass Rate limter and CORS.
+          default: '*'
+        - name: BLOCK_WITH_CORS
+          description: Enable CORS to block the URL that is not in the list
+          default: 'false'
+        - name: SENTRY_DSN_URL
+          description: Track and monitor your API with Sentry.io
+          default: ''
+        - name: USE_REDIS
+          description: Enable redis cache
+          default: 'false'
+        - name: REDIS_APP_URL
+          description: redis TCP url
+          default: ''
+
