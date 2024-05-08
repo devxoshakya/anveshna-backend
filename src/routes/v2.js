@@ -355,8 +355,8 @@ router.get("/episode/:id", async (req, res, next) => {
           200,
           "success",
           req.query.provider === "all"
-            ? { episodes: data }
-            : { episodes: data.episodes }
+            ? { episode: data }
+            : { episode: data.episode }
         )
       );
   } catch (error) {
