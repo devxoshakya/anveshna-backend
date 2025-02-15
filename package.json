@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "bun run src/index.ts",
-    "dev": "bun run --watch src/index.ts",
-    "build": "bun build src --outdir dist"
+    "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
     "@consumet/extensions": "^1.8.1",
