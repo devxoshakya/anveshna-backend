@@ -3,7 +3,8 @@
   "version": "1.0.50",
   "scripts": {
     "start": "bun run src/index.ts",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+     "build": "bun run src/index.ts"
   },
   "dependencies": {
     "@consumet/extensions": "^1.8.1",
